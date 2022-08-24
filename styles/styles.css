@@ -11,8 +11,8 @@
     list-style-type: none;
 }
 
-.body{
-    background-color: black;
+.bgGeneral{
+    background-image: linear-gradient(to right, black, grey);
 }
 
 
@@ -60,6 +60,10 @@
     font-weight: bold;
 }
 
+.bgHeader{
+    background-image: linear-gradient(to left, black, grey);
+}
+
 .titulos{
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -81,9 +85,11 @@
 
 
 .pAboutUs{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: justify;
     margin: 20px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .imgAboutUs{
