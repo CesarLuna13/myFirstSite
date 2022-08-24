@@ -2,42 +2,90 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/styles.css" >
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portafolio</title>
     </head>
-    <body class="body_general">
+    <body class="container-fluid text-center">
 
-        <header class="header_general">
-            <h1 class="h1_general">Portafolio</h1>
-            <nav class="nav_general">
-                <ul>
-                    <li> <a href="../index.html">Inicio</a> </li> <!--Enlace a página "Inicio"-->
-                    <li> <a href="./aboutus.html">About Us</a> </li> <!--Enlace a página "About Us"-->
-                    <li> <a href="./video.html">Video</a> </li> <!--Enlace a página "Video"-->
-                    <li> <a href="./contacto.html">Contacto</a> </li> <!--Enlace a página "Contacto"-->
-                </ul>
-            </nav>
-        </header>
+        <div class="text-bg-dark p-3 row">
+            <div class="col">
+                <header class="d-flex justify-content-between">
 
-        <section class="portafolio_section">
-            <img src="../img/1.jpeg" alt="" width="250px">
-            <img src="../img/Aboutus_imag.jpeg" alt="" width="250px">
-            <img src="../img/fondo_index.jpg" alt="" width="250px">
-            <img src="../img/1.jpeg" alt="" width="250px">
-            <img src="../img/Aboutus_imag.jpeg" alt="" width="250px">
-            <img src="../img/fondo_index.jpg" alt="" width="250px">
-        </section>
+                    <h1>Portafolio</h1>
+
+                    <nav class="navbar navbar-expand-lg bg-dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="../index.html">Inicio</a> </li> <!--Enlace a página "Inicio"-->
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="./aboutus.html">About Us</a> </li> <!--Enlace a página "About Us"-->
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="./video.html">Video</a> </li> <!--Enlace a página "Video"-->
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="./contacto.html">Contacto</a> </li> <!--Enlace a página "Contacto"-->
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        
+        <div class="row bg-secondary">
+            <div class="col">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/1.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Aboutus_imag.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/fondo_index.jpg" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+
+            </div>
+        </div>
 
 
-        <footer class="pieDePagina" id="footer_portafolio">
-            <ul>
-                <li> Facebook  por definir </li>
-                <li> <a href="https://www.instagram.com/palacios.picture/"> Instagram </a> </li> <!-- https://www.instagram.com/palacios.picture/-->
-            </ul>
-
-        </footer>
+        <div class="row bg-dark">
+            <div class="col">
+                <footer>
+                    <ul class="d-flex justify-content-center">
+                        <li> <a class="noStyle" href="#"> Facebook </a> </li>
+                        <li> <a class="noStyle" href="#"> | </a> </li>
+                        <li> <a class="noStyle" href="https://www.instagram.com/palacios.picture/"> Instagram </a> </li> <!-- https://www.instagram.com/palacios.picture/-->
+                    </ul>
+                </footer>
+            </div>
+        </div>
     
     </body>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>

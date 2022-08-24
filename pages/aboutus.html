@@ -2,51 +2,95 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/styles.css" >
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
     </head>
-    <body id="bodyAboutUs" class="body_general">
+    <body class="container-fluid text-center">
 
-        <header id="headerAboutUs" class="header_general"> 
-            <h1 id="h1AboutUs" class="h1_general">About Us</h1>
-            <nav id="navAboutUs" class="nav_general">
-                <ul>
-                    <li> <a href="../index.html">Inicio</a> </li> <!--Enlace a página "Inicio"-->
-                    <li> <a href="./portafolio.html">Portafolio</a> </li> <!--Enlace a página "Portafolio"-->
-                    <li> <a href="./video.html">Video</a> </li> <!--Enlace a página "Video"-->
-                    <li> <a href="./contacto.html">Contacto</a> </li> <!--Enlace a página "Contacto"-->
-                </ul>
-            </nav>
-        </header>
+        <div class="text-bg-dark p-3 row">
+            <div class="col">
+                <header class="d-flex justify-content-between"> 
+                    
+                    <h1>About Us</h1>
 
-        
-        <section id="sectionAboutUs" class="aboutus_section"> <!--Descripción del About Us-->
-            <p>
-                Lorem ipsum dolor sit amet. Non sint cupiditate et exercitationem reprehenderit est dolor ducimus nam autem culpa ut dolorem eveniet. Eum dolorem autem et quibusdam nostrum et obcaecati velit. Vel quasi voluptas eum aliquam consequatur et voluptatem vitae qui fugit mollitia ea rerum debitis!
+                    <nav class="navbar navbar-expand-lg bg-dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="../index.html">Inicio</a> </li> <!--Enlace a página "Inicio"-->
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="./portafolio.html">Portafolio</a> </li> <!--Enlace a página "Portafolio"-->
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="./video.html">Video</a> </li> <!--Enlace a página "Video"-->
+                                    <li class="nav-item"> <a class="noStyle aNav nav-link text-white" href="./contacto.html">Contacto</a> </li> <!--Enlace a página "Contacto"-->
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
 
-                Aut minus dolorem quo eveniet incidunt sed quia distinctio eos nesciunt asperiores rem similique eveniet id quibusdam ipsam rem autem facere. Vel debitis eaque in corrupti minus sit dolor voluptas sit quam sint ut enim maiores officiis laboriosam! Nam reiciendis deleniti sed culpa perferendis a aliquid ullam eos architecto galisum id aliquid omnis quo quisquam optio.
-
-                Eum doloremque porro ut corrupti voluptatem eos dicta voluptatem. In iusto corporis non sunt sequi nam galisum quibusdam. Est debitis corporis et consectetur quia vel sequi natus. Et Quis nostrum aut molestiae quae qui neque doloremque est quia fugiat id autem dolore est doloribus minus aut pariatur assumenda.
-            </p>
-
-            <div> <!--Sección para imágenes-->
-                <img id="img1AboutUs" src="../img/Aboutus_imag.jpeg" alt="Flor" width="100%">
-                <img src="../img/fondo_index.jpg" alt="Flor" width="100%">
+                </header>
             </div>
-        </section>
+        </div>
+
+        <div class="row bg-secondary">
+            <div class="col">
+                <section id="sectionAboutUs" class="aboutus_section"> <!--Descripción del About Us-->
+                    <p>
+                        Lorem ipsum dolor sit amet. Non sint cupiditate et exercitationem reprehenderit est dolor ducimus nam autem culpa ut dolorem eveniet. Eum dolorem autem et quibusdam nostrum et obcaecati velit. Vel quasi voluptas eum aliquam consequatur et voluptatem vitae qui fugit mollitia ea rerum debitis!
+        
+                        Aut minus dolorem quo eveniet incidunt sed quia distinctio eos nesciunt asperiores rem similique eveniet id quibusdam ipsam rem autem facere. Vel debitis eaque in corrupti minus sit dolor voluptas sit quam sint ut enim maiores officiis laboriosam! Nam reiciendis deleniti sed culpa perferendis a aliquid ullam eos architecto galisum id aliquid omnis quo quisquam optio.
+        
+                        Eum doloremque porro ut corrupti voluptatem eos dicta voluptatem. In iusto corporis non sunt sequi nam galisum quibusdam. Est debitis corporis et consectetur quia vel sequi natus. Et Quis nostrum aut molestiae quae qui neque doloremque est quia fugiat id autem dolore est doloribus minus aut pariatur assumenda.
+                    </p>
+        
+                    <div> <!--Sección para imágenes-->
+                        <img id="img1AboutUs" src="../img/Aboutus_imag.jpeg" alt="Flor" width="100%">
+                        <img src="../img/fondo_index.jpg" alt="Flor" width="100%">
+                    </div>
+                </section>
+            </div>
+        </div>
 
 
 
+        <div class="row bg-dark justify-content-center">
+            <div class="col">
+                <footer class="footerIndex">
+                    <ul class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                <li> <a class="noStyle" href="#"> Facebook </a></li>
+                            </div>
+                            <div class="col">
+                                <li> <a class="noStyle" href="https://www.instagram.com/palacios.picture/"> Instagram </a> </li> <!-- https://www.instagram.com/palacios.picture/-->
+                            </div>
+                        </div>  
+                    </ul>
+                </footer>
+            </div>
+        </div>
 
-        <footer id="footerAboutUs" class="pieDePagina">
-            <ul>
-                <li> Facebook</li>
-                <li> <a href="https://www.instagram.com/palacios.picture/"> Instagram </a> </li> <!-- https://www.instagram.com/palacios.picture/-->
-            </ul>
 
-        </footer>
+        <div class="row bg-dark">
+            <div class="col">
+                <footer>
+                    <ul class="d-flex justify-content-center">
+                        <li> <a class="noStyle" href="#"> Facebook </a> </li>
+                        <li> <a class="noStyle" href="#"> | </a> </li>
+                        <li> <a class="noStyle" href="https://www.instagram.com/palacios.picture/"> Instagram </a> </li> <!-- https://www.instagram.com/palacios.picture/-->
+                    </ul>
+                </footer>
+            </div>
+        </div>
 
     </body>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>

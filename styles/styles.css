@@ -11,186 +11,58 @@
     list-style-type: none;
 }
 
-/*  -----   CSS index.html (Mobile first)  -----    */
+
+/*HTML index.html */
 
 .body_index{
-    display: grid;
-    grid-template-areas: 
-        "headerIndex"
-        "footerIndex";
-    grid-template-rows: 32fr 1fr;
-    grid-template-columns: 100%;
-    background-image: url("../img/fondo_index.jpg"); /*Imagen de fondo de index.html*/
-    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.479)), url("../img/fondo_index.jpg"); /*Imagen de fondo de index.html*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
 }
 
 .headerIndex{
-    grid-area: headerIndex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    height: 550px;
 }
 
 .cabeceraTitulo{
-    color: rgb(243, 240, 240);
-    text-shadow: #262626 3px 3px;
-    font-size: 6rem;
+    margin-top: 100px;
+    font-size: 120px;
+    font-weight: 500;
 }
 
-.cabeceraSubtitulo{
-    color: rgb(243, 240, 240);
-    text-shadow: #262626 3px 3px;
-    margin-bottom: 20px;
+.cabecera_nav{
+    margin-top: 50px;
 }
 
-.cabecera_nav ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cabecera_nav ul li{
-    margin-bottom: 20px;
-}
-
-.cabecera_nav ul li a{
+.noStyle{
     color: white;
-
-}
-
-.cabecera_nav ul li a:hover{
-    color: rgba(0, 0, 0, 0.685);
-    border: solid rgba(0, 0, 0, 0.685);
-    border-radius: 10px;
-    padding: 4px;
-}
-
-.footerIndex{
-    grid-area: footerIndex;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.footerIndex ul{
-    display: flex;
-}
-
-.footerIndex ul li{
-    margin-left: 30px;
-}
-
-.footerIndex ul li a{
-    color: white;
-}
-
-.footerIndex ul li a:hover{
-    color: rgba(0, 0, 0, 0.685);
-    border: solid rgba(0, 0, 0, 0.685);
-    border-radius: 10px;
-    padding: 4px;
-}
-
-
-/*  -----   Estilos generales   -----   */
-
-.h1_general{
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: black;
-}
-
-.body_general{
-    background-image: linear-gradient(to left, rgba(221, 221, 193, 0.849), white);
-}
-
-
-
-/*  -----   CSS aboutus.html (Mobile first)    -----   */
-
-#bodyAboutUs{
-    display: grid;
-    grid-template-areas:
-        "headerAboutUs"
-        "sectionAboutUs"
-        "footerAboutUs";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto 50px;
-        font-family: 'Montserrat Alternates', sans-serif;
-}
-
-#headerAboutUs{
-    grid-area: headerAboutUs;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    background-image: linear-gradient(to right, rgba(221, 221, 193, 0.849), white);
-}
-
-#h1AboutUs{
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-#navAboutUs{
-    display: flex;
-    justify-content: end;
-    margin-right: 15px;
-    margin-top: 15px;
-}
-
-#navAboutUs ul li a{
-    color: black;
-    font-weight: 600;
-
-}
-
-
-
-
-#sectionAboutUs{
-    grid-area: sectionAboutUs;
-    /*border: solid red;*/
-    color: black;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    text-align: justify;
+    font-size: 30px;
+    text-decoration: none;
+    list-style-type: none;
     margin-left: 20px;
-    margin-right: 20px;
-    font-weight: 600;
+}
+
+.noStyle:hover{
+    color: white;
+    border-top: solid white;
+    border-bottom: solid white;
+    /*border-radius: 20px;*/
+    padding: 5px;
+    font-weight: bold;
 }
 
 
-#sectionAboutUs div img{
-    margin-top: 20px;
-}
 
 
-#sectionAboutUs div img:hover{
-    box-shadow: 8px 8px black;
-}
+/*HTML aboutus.html */
 
-
-
-#footerAboutUs{
-    grid-area: footerAboutUs;
-    display: flex;
-    justify-content: center;
-}
-
-#footerAboutUs ul{
-    display: flex;
-}
-
-#footerAboutUs ul li{
-    margin-top: 20px;
-    margin-left: 30px;
+.aNav{
+    font-size: 25px;
+    margin-left: 40px;
 }
 
 
@@ -199,83 +71,3 @@
 
 
 
-
-/* RESPONSIVE */
-
-@media screen and (min-width: 768px) {
-    /*  -----   Responsive para tabletas y Desktop index.html  -----   */
-    .body_index{
-        background-position: unset;
-    }
-
-    .cabeceraTitulo{
-        font-size: 9rem;
-    }
-
-    .cabeceraSubtitulo{
-        font-size: 2.5rem;
-    }
-    .cabecera_nav ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .cabecera_nav ul li{
-        margin-left: 20px;
-    }
-
-    .cabecera_nav ul li a{
-        font-size: 2rem;
-    }
-
-
-/*  -----   Responsive para tabletas y Desktop aboutus.html  -----   */
-
-    #navAboutUs ul{
-        display: flex;
-        flex-direction: row;
-        margin-right: 15px;
-        margin-top: 15px;
-    }
-
-    #navAboutUs ul li{
-        margin-left: 30px;
-        
-    }
-
-    #navAboutUs ul li a{
-        font-size: 20px;
-    }
-
-    #navAboutUs ul li a:hover{
-        color: grey;
-        border: solid black;
-        padding: 10px;
-        border-radius: 15px;
-    }
-
-    #sectionAboutUs{
-        display: grid;
-        grid-template-areas: 
-            "text img"
-            "text img";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto;
-    }
-
-    #sectionAboutUs p{
-        grid-area: text;
-        margin-right: 30px;
-    }
-
-    #sectionAboutUs div{
-        grid-area: img;
-    }
-
-    #sectionAboutUs div img{
-        max-width: 60%;
-        max-height: 60%;
-    }
-
-}
