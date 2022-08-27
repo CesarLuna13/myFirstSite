@@ -12,7 +12,7 @@
 }
 
 .bgGeneral{
-    background-image: linear-gradient(to right, black, grey);
+    background-image: linear-gradient(to left, black, grey);
 }
 
 
@@ -108,6 +108,24 @@
 
 
 
+/*HTML portafolio.html */
+
+
+.divGaleria{
+    height: 600px !important;
+}
+
+
+
+
+.mainContact{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.colorwhiteContact{
+    color: white;
+}
 
 
 
