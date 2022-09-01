@@ -1,0 +1,41 @@
+.body_index{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.479)), url("../img/fondo_index.jpg"); /*Imagen de fondo de index.html*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+}
+
+.headerIndex{
+    height: 530px;
+}
+
+.cabeceraTitulo{
+    margin-top: 100px;
+    font-size: 120px;
+    font-weight: 500;
+}
+
+.cabecera_nav{
+    margin-top: 50px;
+}
+
+
+.li_Index{
+    margin-top: 20px;
+}
+
+.linkIndex{
+    @extend %links_base
+
+}
+
+.linkIndex:hover{
+    color: $font-color;
+    border-top: solid white;
+    border-bottom: solid white;
+    padding: 5px;
+    font-weight: bold;
+}

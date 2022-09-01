@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap");
+.general_styles {
+  background-image: linear-gradient(to left, rgb(22, 21, 21), rgba(65, 65, 73, 0.712));
+  color: rgb(248, 245, 245);
+}
+
+.body_index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.479)), url("../img/fondo_index.jpg"); /*Imagen de fondo de index.html*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+}
+
+.headerIndex {
+  height: 530px;
+}
+
+.cabeceraTitulo {
+  margin-top: 100px;
+  font-size: 120px;
+  font-weight: 500;
+}
+
+.cabecera_nav {
+  margin-top: 50px;
+}
+
+.li_Index {
+  margin-top: 20px;
+}
+
+.linkIndex:hover {
+  color: rgb(248, 245, 245);
+  border-top: solid white;
+  border-bottom: solid white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.linkIndex {
+  color: rgb(248, 245, 245);
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 3vh;
+  margin-left: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}/*# sourceMappingURL=main_styles.css.map */
