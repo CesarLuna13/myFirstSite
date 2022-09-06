@@ -1,0 +1,21 @@
+.titulos{
+    font-size: 8vh;
+    font-family: map-get($map: $font, $key: family);
+}
+
+
+.aNav{
+    @extend %links_base;
+    font-size: 3.5vh;
+    margin-left: 2.5vh;
+    font-family: map-get($map: $font, $key: family );
+}
+
+.aNav:hover{
+    color: map-get($map: $colors, $key:font-color );
+    border-top: solid white;
+    border-bottom: solid white;
+    padding: 5px;
+    font-weight: bold;
+}
+

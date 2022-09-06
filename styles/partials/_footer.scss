@@ -1,0 +1,11 @@
+.footer{
+    @extend %links_base
+}
+
+.footer:hover{
+    color: map-get($map: $colors, $key:font-color );
+    border-top: solid white;
+    border-bottom: solid white;
+    padding: 5px;
+    font-weight: bold;
+}

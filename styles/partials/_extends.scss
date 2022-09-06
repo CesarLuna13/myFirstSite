@@ -1,8 +1,8 @@
 
 %links_base{
-    color: $font-color;
+    color: map-get($map: $colors, $key: font-color);
     text-decoration: none;
     list-style-type: none;
-    font-size: 3vh;
-    margin-left: 20px;
+    font-size: 4vh;
+    font-family: map-get($map: $font, $key: family );
 }

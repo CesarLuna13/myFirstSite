@@ -2,6 +2,7 @@
 .general_styles {
   background-image: linear-gradient(to left, rgb(22, 21, 21), rgba(65, 65, 73, 0.712));
   color: rgb(248, 245, 245);
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .body_index {
@@ -11,25 +12,27 @@
   background-position: center;
   background-attachment: fixed;
   font-family: "Montserrat Alternates", sans-serif;
-  color: white;
+  color: rgb(248, 245, 245);
 }
 
 .headerIndex {
-  height: 530px;
+  height: 75vh;
 }
 
 .cabeceraTitulo {
-  margin-top: 100px;
-  font-size: 120px;
+  margin-top: 110px;
+  font-size: 18vh;
   font-weight: 500;
 }
 
-.cabecera_nav {
-  margin-top: 50px;
+.cabeceraSubtitulo {
+  margin-top: 15px;
+  font-size: 8vh;
+  font-weight: 300;
 }
 
-.li_Index {
-  margin-top: 20px;
+.cabecera_nav {
+  margin-top: 7vh;
 }
 
 .linkIndex:hover {
@@ -40,12 +43,39 @@
   font-weight: bold;
 }
 
-.linkIndex {
+.aNav, .footer, .linkIndex {
   color: rgb(248, 245, 245);
   text-decoration: none;
   list-style-type: none;
-  font-size: 3vh;
-  margin-left: 20px;
+  font-size: 4vh;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.footer:hover {
+  color: rgb(248, 245, 245);
+  border-top: solid white;
+  border-bottom: solid white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.titulos {
+  font-size: 8vh;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.aNav {
+  font-size: 3.5vh;
+  margin-left: 2.5vh;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.aNav:hover {
+  color: rgb(248, 245, 245);
+  border-top: solid white;
+  border-bottom: solid white;
+  padding: 5px;
+  font-weight: bold;
 }
 
 * {

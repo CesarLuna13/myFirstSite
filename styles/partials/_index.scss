@@ -5,27 +5,29 @@
     background-position: center;
     background-attachment: fixed;
     font-family: 'Montserrat Alternates', sans-serif;
-    color: white;
+    color: map-get($map: $colors, $key: font-color);
 }
 
 .headerIndex{
-    height: 530px;
+    height: 75vh;
 }
 
 .cabeceraTitulo{
-    margin-top: 100px;
-    font-size: 120px;
+    margin-top: 110px;
+    font-size: 18vh;
     font-weight: 500;
 }
 
+.cabeceraSubtitulo{
+    margin-top: 15px;
+    font-size: 8vh;
+    font-weight: 300;
+}
+
 .cabecera_nav{
-    margin-top: 50px;
+    margin-top: 7vh;
 }
 
-
-.li_Index{
-    margin-top: 20px;
-}
 
 .linkIndex{
     @extend %links_base
@@ -33,7 +35,7 @@
 }
 
 .linkIndex:hover{
-    color: $font-color;
+    color: map-get($map: $colors, $key:font-color );
     border-top: solid white;
     border-bottom: solid white;
     padding: 5px;
