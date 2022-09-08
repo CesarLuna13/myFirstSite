@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap");
+.aNav, .footer, .linkIndex {
+  color: rgb(248, 245, 245);
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 4vh;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
 .general_styles {
-  background-image: linear-gradient(to left, rgb(22, 21, 21), rgba(65, 65, 73, 0.712));
+  background-image: linear-gradient(to right, rgb(22, 21, 21), rgba(65, 65, 73, 0.712));
   color: rgb(248, 245, 245);
   font-family: "Montserrat Alternates", sans-serif;
+}
+
+.general_styles_contacto {
+  color: black;
 }
 
 .body_index {
@@ -43,14 +55,6 @@
   font-weight: bold;
 }
 
-.aNav, .footer, .linkIndex {
-  color: rgb(248, 245, 245);
-  text-decoration: none;
-  list-style-type: none;
-  font-size: 4vh;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
 .footer:hover {
   color: rgb(248, 245, 245);
   border-top: solid white;
@@ -76,6 +80,11 @@
   border-bottom: solid white;
   padding: 5px;
   font-weight: bold;
+}
+
+.contact {
+  margin-top: 8vh;
+  height: 70vh;
 }
 
 * {

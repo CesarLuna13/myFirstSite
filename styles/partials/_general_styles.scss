@@ -1,5 +1,9 @@
 .general_styles{
-    background-image: linear-gradient(to left, map-get($map: $colors, $key: background-primary) , map-get($map: $colors, $key: background-secondary));
+    background-image: linear-gradient(to right, map-get($map: $colors, $key: background-primary) , map-get($map: $colors, $key: background-secondary));
     color: map-get($map: $colors, $key: font-color); 
     font-family: map-get($map: $font , $key:family);   
+}
+
+.general_styles_contacto{
+color: map-get($map: $colors, $key: font-color-2 );
 }
