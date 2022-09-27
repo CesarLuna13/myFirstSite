@@ -63,6 +63,10 @@
   font-weight: bold;
 }
 
+footer {
+  margin-top: 50px;
+}
+
 .titulos {
   font-size: 8vh;
   font-family: "Montserrat Alternates", sans-serif;
@@ -85,6 +89,28 @@
 .contact {
   margin-top: 8vh;
   height: 70vh;
+}
+
+.pAboutUs {
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.imgPortafolio {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cat {
+  height: 550px;
+  width: 640px;
+}
+
+.divGaleria {
+  margin-top: 50px;
 }
 
 * {
